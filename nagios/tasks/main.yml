@@ -7,7 +7,6 @@
   when: ansible_distribution == "Ubuntu"
 
 - name: start httpd (CentOS)
-  tags: apache,centos,httpd
   service:
     name: httpd
     state: started
